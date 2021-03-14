@@ -1,49 +1,100 @@
 // arrays of questions and answers
 var myQuestions = [
     {
-        question: 'Commonly used data types DO NOT include:',
-        a: '1. strings',
-        b: '2. booleans',
-        c: '3. alerts',
-        d: '4. numbers',
-        correctAnswer: '3. alerts',
+        question: '1. Commonly used data types DO NOT include:',
+        a: 'strings',
+        b: 'booleans',
+        c: 'alerts',
+        d: 'numbers',
+        correctAnswer: 'alerts',
     },
     {
-        question: 'The condition in an if / else statement is enclosed with _______.',
-        a: '1. quotes',
-        b: '2. curly brackets',
-        c: '3. parenthesis',
-        d: '4. square brackets',
-        correctAnswer: '2. curly brackets',
+        question: '2. The condition in an if / else statement is enclosed with _______.',
+        a: 'quotes',
+        b: 'curly brackets',
+        c: 'parenthesis',
+        d: 'square brackets',
+        correctAnswer: 'curly brackets',
     },
     {
-        question: 'Arrays in JavaScript can be used to store _______.',
-        a: '1. numbers and strings',
-        b: '2. other arrays',
-        c: '3. booleans',
-        d: '4. all of the above',
-        correctAnswer: '4. all of the above',
+        question: '3. Arrays in JavaScript can be used to store _______.',
+        a: 'numbers and strings',
+        b: 'other arrays',
+        c: 'booleans',
+        d: 'all of the above',
+        correctAnswer: 'all of the above',
     },
     {
-        question: 'String values must be enclosed within _______ when being assigned to variables.',
-        a: '1. commas',
-        b: '2. curly brackets',
-        c: '3. quotes',
-        d: '4. parenthesis',
-        correctAnswer: '3. quotes',
+        question: '4. String values must be enclosed within _______ when being assigned to variables.',
+        a: 'commas',
+        b: 'curly brackets',
+        c: 'quotes',
+        d: 'parenthesis',
+        correctAnswer: 'quotes',
     },
     {
-        question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
-        a: '1. JavaScript',
-        b: '2. terminal/bash',
-        c: '3. for loops',
-        d: '4. console.log',
-        correctAnswer: '4. console.log',
+        question: '5. A very useful tool used during development and debugging for printing content to the debugger is:',
+        a: 'JavaScript',
+        b: 'terminal/bash',
+        c: 'for loops',
+        d: 'console.log',
+        correctAnswer: 'console.log',
     }
 ];
 
 // DOM elements
+var quizContent = document.getElementById('quiz-content');
+var result = document.getElementById('result');
+var endQuiz = document.getElementById('end-quiz');
+var finalScore = document.getElementById('finalScore'); 
+var viewHighScores = document.getElementById('view-high-scores');
+var btnStartQuiz = document.getElementById('btn-start-quiz');
+var homeContent = document.getElementById('home-content');
+var quizContent = document.getElementById('quiz-content');
+
+
+function quizQuestions()  {
+    
+}
+
+
+function startQuiz() {
+    homeContent.style.display="none";
+    quizContent.style.display="block";
+    quizQuestions();
+}
+
+
+
+// viewHighScores.addEventListener('click', function (ev1) {
+//     ev1.preventDefault();
+//     highScores.style.display = 'block';
+//     quizChallenge.style.display = 'none';
+    
+//     renderHighScores();
+// });
+
+
+
+// EVENT LISTENERS
+// startQuiz() activated on button click
+btnStartQuiz.addEventListener("click", startQuiz) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // timer function
-
-// addEventListeners - click

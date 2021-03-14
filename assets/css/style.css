@@ -37,6 +37,10 @@ body {
     margin: 50px;
 }
 
+.hide {
+    display: none;
+}
+
 /* ===2.HEADER=== */
 
 #btn-high-scores {
@@ -47,9 +51,13 @@ body {
     background-color: white;
 }
 
-.view-high-scores {
+#view-high-scores {
     display: flex;
     justify-content: space-between;
+}
+
+#btn-high-scores:hover {
+    color: rgba(247, 131, 212, 0.502);
 }
 
 p {
@@ -70,10 +78,14 @@ p {
     margin: 30px;
     color: white;
     font-size: 18px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 12px;
     padding: 10px 20px;
+}
+
+#btn-start-quiz:hover {
+    background-color: var(--secondary-color);
 }
 
 .text {
@@ -86,14 +98,11 @@ p {
 
 /* ===4.QUESTIONS/ANSWERS SECTION=== */
 
-#answers-section {
-    margin: 30px;
-}
-
-#answers-section {
+#answersId {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 30px;
 }
 
 .abcd {
@@ -106,9 +115,72 @@ p {
     padding: 10px 20px;
 }
 
+.abcd:hover {
+        background-color: var(--secondary-color);
+    }
+
+.correctWrong {
+    color: grey;
+    border-top: grey solid 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 /* ===5.USERNAME/HIGHSCORE SECTION=== */
+
+.end-quiz-p {
+    font-size: 16px;
+}
+
+.btn-submit {
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+}
+
+
 /* ===6.HIGHSCORE SECTION=== */
 
 ul {
     background-color: rgb(75, 0, 130, 0.5);
+}
+
+#btn-go-back {
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+#btn-go-back:hover {
+    background-color: var(--secondary-color);
+}
+
+#btn-clear-high-scores {
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+#btn-clear-high-scores:hover {
+    background-color: var(--secondary-color);
+}
+
+#high-scores-page {
+    margin-bottom: 40px;
 }
