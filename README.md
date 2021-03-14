@@ -1,4 +1,4 @@
-# **_Coding Quiz_**
+# **_Coding Quiz Challenge: JavaScript fundamentals_**
 
 ## **_Table of contents_**
 * [Description of the project](#description-of-the-project)
@@ -8,7 +8,7 @@
 * [Link URL to GitHub Repository](#link-URL-to-GitHub-repository)
 
 ## **_Description of the project_**
-This project is a timed coding quiz with multiple-choice questions. A question answered incorrectly results in time substracted from the timer. When all questions are answered or the timer reaches 0, the game is over. At the end of the game, high score and user name are saved.
+This project is a timed coding quiz with multiple-choice questions. A question answered incorrectly results in time substracted from the timer. When all questions are answered or the timer reaches 0, the quiz is over. At the end of the quiz, high score and user name can be saved in local memory.
 
 ## **_Technologies used_**
 Project is created using:

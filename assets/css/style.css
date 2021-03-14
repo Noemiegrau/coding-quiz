@@ -1,0 +1,114 @@
+/* CSS DIRECTORY
+	1. =GLOBAL
+	2. =HEADER
+	3. =HOMEPAGE
+    4. =QUESTIONS/ANSWERS SECTION
+    5. =USERNAME/HIGHSCORE SECTION
+    6. =HIGHSCORE SECTION
+*/
+
+/* ===1.GLOBAL=== */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+:root {
+    --primary-color: indigo;
+    --secondary-color: violet;
+    --tertiary-color: thistle;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions-title-section {
+    font-size: 45px;
+    margin: 50px;
+}
+
+/* ===2.HEADER=== */
+
+#btn-high-scores {
+    color:var(--secondary-color); 
+    margin: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+.view-high-scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 20px;
+}
+
+#timer {
+    margin: 30px;
+} 
+
+/* ===3.HOMEPAGE=== */
+
+#home-text-section {
+    margin: 30px;
+}
+
+#btn-start-quiz {
+    margin: 30px;
+    color: white;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.home-text {
+    text-align: center;
+}
+
+/* ===4.QUESTIONS/ANSWERS SECTION=== */
+
+#answers-section {
+    margin: 30px;
+}
+
+#answers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.abcd {
+    margin: 3px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+/* ===5.USERNAME/HIGHSCORE SECTION=== */
+/* ===6.HIGHSCORE SECTION=== */
+
+ul {
+    background-color: rgb(75, 0, 130, 0.5);
+}
