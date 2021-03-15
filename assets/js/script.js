@@ -68,6 +68,7 @@ var goBack = document.getElementById('btn-go-back');
 var clearHighScores = document.getElementById('btn-clear-high-scores');
 var submitScore = document.getElementById('submitScore');
 var finalScore = document.getElementById('finalScore');
+var timerNum = document.getElementById('timer-num');
 // var correctSection = document.getElementById('correctSection');
 // var wrongSection = document.getElementById('wrongSection');
 
@@ -76,6 +77,7 @@ var finalScore = document.getElementById('finalScore');
 let score = 0;
 let runningQuestionIndex = 0;
 let lastQuestionIndex = questions.length -1;
+var timeoutID;
 
 // prevents endQuiz from appearing on the homepage
 endQuiz.style.display="none";
@@ -91,6 +93,8 @@ function quizQuestions()  {
     btnc.innerHTML = q.answerC;
     btnd.innerHTML = q.answerD;
 
+    // resetTimer();
+
 };
 
 // render progress
@@ -100,12 +104,11 @@ function renderProgress(){
     }
 }
 
-
-
 function answerIsCorrect() {
     progress.style.display="block";
     correctAlert.style.display="block";
     wrongAlert.style.display="none";
+    score++;
     alert('Correct!');
 }
 
@@ -113,6 +116,7 @@ function answerIsWrong() {
     progress.style.display="block";
     wrongAlert.style.display="block";
     correctAlert.style.display="none";
+    timer -=10;
     alert('Wrong! You loose 10 seconds on the timer :(');
 }
 
@@ -124,13 +128,16 @@ function enterScore() {
 }
 
 function rightWrong(answer) {
-    if(questions[runningQuestionIndex].correct == answer ) {
-        score++;
+    if (answer == questions[runningQuestionIndex].correctAnswer) {
+        // score++;
         answerIsCorrect();
-        return score;
+        // return score;
 
-    } else if (questions[runningQuestionIndex].correct !== answer ) {
+    } else {
+        // timer -=10;
         answerIsWrong();
+        console.log(answer);
+        console.log(questions[runningQuestionIndex].correctAnswer);
     }
 
     if(runningQuestionIndex < lastQuestionIndex) {
@@ -140,7 +147,7 @@ function rightWrong(answer) {
         enterScore();
     }
 }
-console.log(score);
+// console.log(score);
 // starts the game
 function startQuiz() {
     homeContent.style.display="none";
