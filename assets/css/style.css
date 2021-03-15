@@ -30,11 +30,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin-left: 150px;
 }
 
 .questions-title-section {
     font-size: 45px;
     margin: 50px;
+    margin-left: 0;
 }
 
 .hide {
@@ -92,6 +96,11 @@ p {
     font-size: 18px;
 }
 
+
+#title-section {
+    text-align: center;
+}
+
 .home-text {
     text-align: center;
 }
@@ -103,6 +112,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     margin: 30px;
+    /* margin-left: 260px; */
 }
 
 .abcd {
@@ -113,6 +123,8 @@ p {
     background-color: var(--primary-color);
     border-radius: 12px;
     padding: 10px 20px;
+    width: 200px;
+    text-align: left;
 }
 
 .abcd:hover {
@@ -146,6 +158,10 @@ p {
     background-color: var(--secondary-color);
 }
 
+#end-quiz {
+    display: flex;
+    margin-left: 300px;
+}
 
 /* ===6.HIGHSCORE SECTION=== */
 

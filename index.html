@@ -39,34 +39,48 @@
     <!-- section questions and answers-->
     <section id="quiz-content" class="main-content hide">
 
-        <h2 id="question" class="questions-title-section">Question</h2>
-        <div id="answersId" class="answersList">
-            <button id="a" class="abcd" onclick="">a</button>
-            <button id="b" class="abcd" onclick="">b</button>
-            <button id="c" class="abcd" onclick="">c</button>
-            <button id="d" class="abcd" onclick="">d</button>
-        <div>
-
-        <!-- section end of quiz - put username/high score -->
-        <div id="end-quiz"class="hide">
-            <h1>All done!</h1>
-            <p id="finalScore"></p>
-            <div class="end-quiz-input">
-                <p class="end-quiz-p">
-                    Enter initials:
-                    <input type="text" placeholder="Enter your initials" name="initials" id="initials" />
-                    <button id="submitScore" class="btn-submit">Submit</button>
-                </p>
-            </div>
+        <div id="questionsAnswers">
+            <h2 id="question" class="questions-title-section">Question</h2>
+            <div id="answersId" class="answersList">
+                <button id="a" class="abcd" onclick="rightWrong('a')">a</button>
+                <button id="b" class="abcd" onclick="rightWrong('b')">b</button>
+                <button id="c" class="abcd" onclick="rightWrong('c')">c</button>
+                <button id="d" class="abcd" onclick="rightWrong('d')">d</button>
+            <div>
         </div>
 
-        <!--right/wrong-->
-        <div class="correctWrong">
+        
+
+        <div id="progress" class="correctWrong hide">
             <p id="correct" class="hide">Correct!</p>
             <p id="wrong" class="hide">Wrong!</p>
         </div>
-
+      
     </section>
+
+    <!-- section end of quiz - put username/high score -->
+    <div id="end-quiz" class="hide">
+        <h1>All done!</h1>
+        <p id="finalScore"></p>
+        <div class="end-quiz-input">
+            <p class="end-quiz-p">
+                Enter initials:
+                <input type="text" placeholder="Enter your initials" name="initials" id="initials" />
+                <button id="submitScore" class="btn-submit">Submit</button>
+            </p>
+        </div>
+    </div>
+    
+        <!-- <div id="correctSection" class="correctWrong" class="hide">
+           <p id="correct">Correct!</p>
+        </div>
+
+
+        <div id="wrongSection" class="correctWrong" class="hide">
+            <p id="wrong">Wrong!</p>
+        </div> --> 
+
+    
 
     <!-- section high score -->
     <div id="high-scores-page" class="main-content hide">
