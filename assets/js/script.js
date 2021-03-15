@@ -67,6 +67,7 @@ var questionsAnswers = document.getElementById('questionsAnswers');
 var goBack = document.getElementById('btn-go-back');
 var clearHighScores = document.getElementById('btn-clear-high-scores');
 var submitScore = document.getElementById('submitScore');
+var finalScore = document.getElementById('finalScore');
 // var correctSection = document.getElementById('correctSection');
 // var wrongSection = document.getElementById('wrongSection');
 
@@ -118,12 +119,16 @@ function answerIsWrong() {
 function enterScore() {
     questionsAnswers.style.display="none";
     endQuiz.style.display="block";
+    document.getElementById("finalScore").innerHTML = "Your score is " + score + " points.";
+    //finalScore.innerHTML('Your score is ' + score + ' points!');
 }
 
 function rightWrong(answer) {
     if(questions[runningQuestionIndex].correct == answer ) {
         score++;
         answerIsCorrect();
+        return score;
+
     } else if (questions[runningQuestionIndex].correct !== answer ) {
         answerIsWrong();
     }
@@ -135,7 +140,7 @@ function rightWrong(answer) {
         enterScore();
     }
 }
-
+console.log(score);
 // starts the game
 function startQuiz() {
     homeContent.style.display="none";
