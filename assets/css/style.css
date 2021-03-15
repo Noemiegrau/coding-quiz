@@ -159,6 +159,20 @@ p {
     background-color: var(--secondary-color);
 }
 
+.btn-replay {
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+.btn-replay:hover {
+    background-color: var(--secondary-color);
+}
+
 #end-quiz {
     display: flex;
     margin-left: 300px;
@@ -168,6 +182,12 @@ p {
 
 ul {
     background-color: rgb(75, 0, 130, 0.5);
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #btn-go-back {

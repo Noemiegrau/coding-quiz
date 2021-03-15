@@ -11,17 +11,17 @@
 
 <body>
 
-    <!-- header -->
+    <!-- Header -->
     <header id="header">
         <div id="view-high-scores">
             <a href="#" id="btn-high-scores">View high scores</a>
             <div id="timer">
-                <span>Time: <b id="timer-num">0</b></span>
+                <span>Time: <b id="timerNumber">0</b></span>
             </div>
         </div>
     </header>
 
-    <!-- section start/homepage challenge -->
+    <!-- Section start/homepage challenge -->
     <main id="home-content" class="main-content">
 
         <h2 id="title-section" class="questions-title-section">Coding Quiz Challenge: JavaScript fundamentals</h2>
@@ -38,7 +38,7 @@
 
     </main>
 
-    <!-- section questions and answers-->
+    <!-- Section questions and answers-->
     <section id="quiz-content" class="main-content hide">
 
         <div id="questionsAnswers">
@@ -51,7 +51,7 @@
             <div>
         </div>
 
-    <!-- right or wrong section -->
+    <!-- Right or wrong section -->
         <div id="progress" class="correctWrong hide">
             <p id="correct" class="hide">Correct!</p>
             <p id="wrong" class="hide">Wrong!</p>
@@ -59,7 +59,7 @@
       
     </section>
 
-    <!-- section end of quiz - put username/high score -->
+    <!-- Section end of quiz - put username/high score -->
     <div id="end-quiz" class="hide">
         <h1>All done!</h1>
         <p id="finalScore"></p>
@@ -68,19 +68,29 @@
                 Enter initials:
                 <input type="text" placeholder="Enter your initials" name="initials" id="initials" />
                 <button id="submitScore" class="btn-submit">Submit</button>
+                <!-- <button id="replay" class="btn-replay">Replay quiz here!</button> -->
             </p>
         </div>
     </div>    
 
-    <!-- section high score -->
+    <!-- Section high score -->
     <div id="high-scores-page" class="main-content hide">
 
         <h1>High scores</h1>
-        <ul id="high-score-list"></ul>
+
+        <ul id="highscore-initials">
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+
+        <div id="highscore-score"></div>
+        <!-- <ul id="high-score-list"></ul> -->
 
         <div id="end-buttons">
-            <button id="btn-go-back" onclick="">Go back</button>
-            <button id="btn-clear-high-scores" onclick="">Clear high scores</button> 
+            <button type="button" id="btn-go-back" onclick="">Go back</button>
+            <button type="button" id="btn-clear-high-scores" onclick="">Clear high scores</button> 
         </div>
 
     </div>
