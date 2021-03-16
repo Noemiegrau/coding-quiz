@@ -65,7 +65,7 @@ var questionsAnswers = document.getElementById('questionsAnswers');
 var goBack = document.getElementById('btn-go-back');
 var clearHighScores = document.getElementById('btn-clear-high-scores');
 var submitScore = document.getElementById('submitScore');
-// var replay = document.getElementById('replay');
+var replay = document.getElementById('replay');
 var finalScore = document.getElementById('finalScore');
 var timer = document.getElementById('timer');
 var timerNumber = document.getElementById('timerNumber');
@@ -224,21 +224,14 @@ function submitScoreInitial() {
     }
 };
 
-// // Replay function
-// function replayQuiz() {
-//     homeContent.style.display ="block";
-//     scoreContainer.style.display ="none";
-//     endQuiz.style.display="none";
-//     timeLeft = 60;
-//     score = 0;
-//     currentQuestionIndex = 0;
-// }
+// Replay function that refreshes the page so the user can play again
+function replayQuiz() {
+    location.reload(); 
+}
 
 // Happens when click on goBack button
 function goBackFunction() {
-    homeContent.style.display ="block";
-    quizContent.style.display="none";
-    scoreContainer.style.display ="none";
+    location.reload();
 };
 
 // Event Listeners
@@ -247,4 +240,4 @@ viewHighScores.addEventListener("click", scoreRender);
 goBack.addEventListener("click", goBackFunction);
 clearHighScores.addEventListener("click", clearScores);
 submitScore.addEventListener("click", submitScoreInitial);
-// replay.addEventListener("click", replayQuiz);
+replay.addEventListener("click", replayQuiz);
