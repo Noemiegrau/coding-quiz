@@ -14,7 +14,7 @@ let questions = [
         answerB: '2. curly brackets',
         answerC: '3. parenthesis',
         answerD: '4. square brackets',
-        correctAnswer: 'b'
+        correctAnswer: 'c'
     },
     {
         question: 'Arrays in JavaScript can be used to store _______.',
