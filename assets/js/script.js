@@ -229,7 +229,7 @@ function replayQuiz() {
     location.reload(); 
 }
 
-// Happens when click on goBack button
+// goBack function that refreshes the page so the user can go back to the homepage
 function goBackFunction() {
     location.reload();
 };
