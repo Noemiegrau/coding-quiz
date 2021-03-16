@@ -164,7 +164,7 @@ function startQuiz() {
         timeLeft--;
         timerNumber.textContent = timeLeft;
 
-        if (timeLeft === 0) {
+        if (timeLeft === 0 || timeLeft < 0) {
             alert('Oups.. Time out!');
             clearInterval(timerInterval);
             enterScore();
