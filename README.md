@@ -23,7 +23,7 @@ Project is created using:
 ![quiz3](https://user-images.githubusercontent.com/78329298/110989700-17ba9880-8327-11eb-9382-3ab2f16aa6e3.png)
 
 ## **_Installation_**
-Here are some guidelines for installing the project on your local machine in order to be able to try it:
+Here are some guidelines for installing the project on your local machine:
 
 1. Clone or download the repository to your own local machine.
 
